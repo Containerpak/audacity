@@ -1,26 +1,25 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Audacity",
   "description": "Record and edit audio with effects, plugins and multitrack tools.",
   "version": "3.7.7",
-  "image": "ghcr.io/containerpak/audacity:main",
-  "binaries": ["/usr/bin/audacity"],
-  "desktop_entries": ["/usr/share/applications/audacity.desktop"],
+  "image": "ghcr.io/containerpak/audacity@sha256:1be47218866eda36b61554bfc5605ff759adb8f842de4d7a9f2c5e02afe7f8e4",
+  "binaries": [
+    "/usr/bin/audacity"
+  ],
+  "desktop_entries": [
+    "/usr/share/applications/audacity.desktop"
+  ],
   "dependencies": [],
   "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": true,
@@ -33,7 +32,10 @@
     "notification": false,
     "openURI": true,
     "filesystem": [
-      {"path": "home", "access": "read-write"}
+      {
+        "path": "home",
+        "access": "read-write"
+      }
     ],
     "env": [],
     "network": true,
@@ -42,7 +44,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }
