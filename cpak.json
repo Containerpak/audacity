@@ -4,7 +4,7 @@
   "name": "Audacity",
   "description": "Record and edit audio with effects, plugins and multitrack tools.",
   "version": "3.7.7",
-  "image": "ghcr.io/containerpak/audacity@sha256:2e557da0e5451478c7c6a596fbf5d90c828abee0914de5b1e6e0053c302746d3",
+  "image": "ghcr.io/containerpak/audacity@sha256:9585b62afd10a10ebdf506defeef1bce03786e6ebc5d7bfa3fd09f97a51b8c4a",
   "binaries": [
     "/usr/bin/audacity"
   ],
